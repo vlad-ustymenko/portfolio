@@ -30,6 +30,14 @@ module.exports = (env) => {
           },
         ],
       }),
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: path.resolve(__dirname, 'src/favicon'),
+            to: path.resolve(__dirname, 'build/favicon'),
+          },
+        ],
+      }),
     ],
     module: {
       rules: [
@@ -61,7 +69,7 @@ module.exports = (env) => {
             },
           },
         }),
-        new ImageminWebpWebpackPlugin(),
+        //new ImageminWebpWebpackPlugin(),
       ],
     },
   }

@@ -1,5 +1,5 @@
 'use strict'
-import './css/style.css'
+//import './css/style.css'Розкоментировать при деплое
 //import html from './index.html'
 
 const elemToggleFunc = function (elem) {

@@ -6,13 +6,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
-	<link rel="shortcut icon" href="./favicon.ico" type="image/ico">
 	<link rel="stylesheet" href="./css/style.css">
+	
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="./favicon/site.webmanifest">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
 		rel="stylesheet">
+	
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 	<script type="text/javascript">(function () { emailjs.init("gDqvjgezgYQLmh9Y1"); })();</script>
+	
 </head>
 
 <body class="dark_theme">
@@ -164,8 +171,8 @@
 						</li>
 						<li class="skills__link">
 							<div class="skills__card">
-								<div class="tooltip">jQuery</div>
-								<img src="./img/icons/jquery.png" alt="#">
+								<div class="tooltip">Redux</div>
+								<img src="./img/icons/redux.png" alt="#">
 							</div>
 						</li>
 						<li class="skills__link">
@@ -197,8 +204,8 @@
 						</li>
 						<li class="skills__link">
 							<div class="skills__card">
-								<div class="tooltip">Redux</div>
-								<img src="./img/icons/redux.png" alt="#">
+								<div class="tooltip">jQuery</div>
+								<img src="./img/icons/jquery.png" alt="#">
 							</div>
 						</li>
 						<li class="skills__link">
@@ -348,9 +355,8 @@
 					<li>
 						<a href="https://www.udemy.com/certificate/UC-0554a843-aa71-4b53-a77b-21f7b3bf7d1a/" target="_blank"
 							class="portfolio__card">
-							<img src="./img/Courses/4450454_36df_6.jpg" alt="">
+							<img src="./img/Courses/javascript.png" alt="">
 							<div class="portfolio__card-content">
-								<h2 class="portfolio__card-title">Complete JavaScript Course</h2>
 								<time class="portfolio__card-date"> Udemy Dec.5, 2023</time>
 							</div>
 						</a>
@@ -358,9 +364,8 @@
 
 					<li>
 						<a href="https://www.udemy.com/certificate/UC-373a8beb-e57d-4217-82e2-a1118156672a/" target="_blank" class="portfolio__card">
-							<img src="./img/Courses/4782518_1d83_2.jpg" alt="">
+							<img src="./img/Courses/react.png" alt="">
 							<div class="portfolio__card-content">
-								<h2 class="portfolio__card-title">Complete course on React and Redux</h2>
 								<time class="portfolio__card-date">Udemy Jan.18, 2024</time>
 							</div>
 						</a>
@@ -368,18 +373,16 @@
 
 					<li>
 						<a href="#" class="portfolio__card">
-							<img src="./img/Courses/5228176_e100_3.jpg" alt="">
+							<img src="./img/Courses/node_js.png" alt="">
 							<div class="portfolio__card-content">
-								<h2 class="portfolio__card-title">Complete Node.js Course</h2>
 								<time class="portfolio__card-date">Udemy Dec.5, 2023</time>
 							</div>
 						</a>
 					</li>
 					<li>
 						<a href="#" class="portfolio__card">
-							<img src="./img/Courses/112.png" alt="">
+							<img src="./img/Courses/frontend.png" alt="">
 							<div class="portfolio__card-content">
-								<h2 class="portfolio__card-title">Frontend. Basic course from Ciklum</h2>
 								<time class="portfolio__card-date">Ciklum Dec.5, 2023</time>
 							</div>
 						</a>
@@ -466,7 +469,7 @@
 						<lable for="name" class="form__lable">Name</lable>
 						<div class="form__input-wraper">
 							<input type="text" name="name" required placeholder="Your Name" class="form__input-field" id="name"
-								tabindex="1">
+								tabindex="1" autoComplete="off">
 							<ion-icon name="person-circle"></ion-icon>
 						</div>
 					</div>
@@ -475,7 +478,7 @@
 						<lable for="email" class="form__lable">Email</lable>
 						<div class="form__input-wraper">
 							<input type="email" name="email" required placeholder="Your Email" class="form__input-field"
-								id="email" tabindex="2">
+								id="email" tabindex="2" autoComplete="off">
 							<ion-icon name="mail"></ion-icon>
 						</div>
 					</div>
@@ -484,7 +487,7 @@
 						<lable for="phone" class="form__lable">Telephone</lable>
 						<div class="form__input-wraper">
 							<input type="tel" data-tel-input name="phone" required placeholder="+38 (XXX) XXX-XX-XX"
-								maxlength="19" class="form__input-field" id="phone" tabindex="3">
+								maxlength="19" class="form__input-field" id="phone" tabindex="3" autoComplete="off">
 							<ion-icon name="call"></ion-icon>
 						</div>
 					</div>
