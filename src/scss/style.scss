@@ -283,6 +283,7 @@ body {
     cursor: pointer;
     transition: 0.25s ease-in-out;
     z-index: 1;
+	 background-color:var(--color-primaryd);
 
     @media (max-width: 1024px) {
       display: unset;
@@ -725,20 +726,28 @@ body {
   padding: 60px 0 20px 0;
 
   &__list {
-    column-count: 3;
-    column-gap: 20px;
+	display: grid;
+	column-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 20px 0 0 0;
 
-    @media (max-width: 1024px) {
-      column-count: 2;
-    }
+	@media (max-width: 768px) {
+	  grid-template-columns: 1fr;
+	}
+   //  column-count: 3;
+   //  column-gap: 20px;
 
-    @media (max-width: 768px) {
-      column-count: 1;
+   //  @media (max-width: 1024px) {
+   //    column-count: 2;
+   //  }
 
-      > li:first-child {
-        column-span: all;
-      }
-    }
+   //  @media (max-width: 768px) {
+   //    column-count: 1;
+
+   //    > li:first-child {
+   //      column-span: all;
+   //    }
+   //  }
   }
 
   &__card {

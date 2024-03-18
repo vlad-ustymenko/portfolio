@@ -13,6 +13,7 @@
 :focus,
 :active {
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a:focus,
@@ -342,6 +343,7 @@ body.light_theme .header.active .header__theme-switcher {
   cursor: pointer;
   transition: 0.25s ease-in-out;
   z-index: 1;
+  background-color: var(--color-primaryd);
 }
 @media (max-width: 1024px) {
   .header__menu-btn {
@@ -765,25 +767,15 @@ body.light_theme .header.active .header__theme-switcher {
   padding: 60px 0 20px 0;
 }
 .portfolio__list {
-  -moz-column-count: 3;
-       column-count: 3;
+  display: grid;
   -moz-column-gap: 20px;
        column-gap: 20px;
-}
-@media (max-width: 1024px) {
-  .portfolio__list {
-    -moz-column-count: 2;
-         column-count: 2;
-  }
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 0 0 0;
 }
 @media (max-width: 768px) {
   .portfolio__list {
-    -moz-column-count: 1;
-         column-count: 1;
-  }
-  .portfolio__list > li:first-child {
-    -moz-column-span: all;
-         column-span: all;
+    grid-template-columns: 1fr;
   }
 }
 .portfolio__card {
