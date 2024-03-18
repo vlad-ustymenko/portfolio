@@ -13,6 +13,7 @@
 :focus,
 :active {
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 a:focus,
 a:active {
