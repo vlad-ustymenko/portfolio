@@ -68,21 +68,22 @@
 
 				<ul class="mainscreen__list">
 					<li><a href="https://www.facebook.com/profile.php?id=100002126700664" class="mainscreen__link"
-							target="_blank">
+							target="_blank"
+							aria-label="facebook page">
 							<ion-icon name="logo-facebook"></ion-icon>
 
 							<div class="tooltip">Facebook</div>
 						</a>
 
 					</li>
-					<li><a href="https://github.com/vlad-ustymenko" class="mainscreen__link" target="_blank">
+					<li><a href="https://github.com/vlad-ustymenko" class="mainscreen__link" target="_blank" aria-label="github page">
 							<ion-icon name="logo-github"></ion-icon>
 
 							<div class="tooltip">GitHub</div>
 						</a>
 					</li>
 
-					<li><a href="https://www.linkedin.com/in/ustymenko-dev/" class="mainscreen__link" target="_blank">
+					<li><a href="https://www.linkedin.com/in/ustymenko-dev/" class="mainscreen__link" target="_blank" aria-label="linkedin page">
 							<ion-icon name="logo-linkedin"></ion-icon>
 
 							<div class="tooltip">LinkedIn</div>
@@ -267,9 +268,9 @@
 					<li>
 						<div class="section__content">
 							<div class="section__subtitle">MY WORKS</div>
-							<div class="section__title">See My Works Which Will Amaze You!</div>
+							<div class="section__title">Some examples of my work</div>
 							<div class="section__text">
-								This section is still in development.
+								To better evaluate my competence level and working style, take a look at some examples of my code. Follow the links to learn more about my projects!
 								<!-- We develop the best quality website that serves for the long-term.
 								Well-documented, clean, easy and elegant interface helps any non-technical clients. -->
 							</div>
@@ -279,11 +280,30 @@
 		
 
 					<li>
-						<a href="https://vlad-ustymenko.github.io/prometheus-x-course-task/books" class="portfolio__card">
-							<img src="./img/portfolio/project-2.png" alt="">
+						<a href="https://vlad-ustymenko.github.io/taskflow/today" target="_blank" class="portfolio__card">
+							<picture >
+								<source type="image/webp" srcset="./img/portfolio/taskflow-LG.webp" media="(min-width: 1200px)">
+								<source type="image/webp" srcset="./img/portfolio/taskflow-MD.webp" media="(min-width: 1024px)">
+								<source type="image/webp" srcset="./img/portfolio/taskflow-S.webp" media="(min-width: 768px)">
+								<source type="image/webp" srcset="./img/portfolio/taskflow-XS.webp" media="(min-width: 100px)">
+								<img src="./img/portfolio/taskflow-LG.webp" alt="todo app">
+							</picture>
 							<div class="portfolio__card-content">
-								<h2 class="portfolio__card-title">Online Bookstore</h2>
-								<time class="portfolio__card-date">Click to visit</time>
+								<div class="portfolio__card-date">Click to visit</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="https://vlad-ustymenko.github.io/prometheus-x-course-task/books" target="_blank" class="portfolio__card">
+							<picture >
+								<source type="image/webp" srcset="./img/portfolio/bookstore-LG.webp" media="(min-width: 1200px)">
+								<source type="image/webp" srcset="./img/portfolio/bookstore-MD.webp" media="(min-width: 1024px)">
+								<source type="image/webp" srcset="./img/portfolio/bookstore-S.webp" media="(min-width: 768px)">
+								<source type="image/webp" srcset="./img/portfolio/bookstore-XS.webp" media="(min-width: 100px)">
+								<img src="./img/portfolio/bookstore-LG.webp" alt="bookstore">
+							</picture>
+							<div class="portfolio__card-content">
+								<div class="portfolio__card-date">Click to visit</div>
 							</div>
 						</a>
 					</li>
@@ -400,7 +420,7 @@
 							<ul class="contact__list-social">
 								<li>
 									<a href="https://www.facebook.com/profile.php?id=100002126700664"
-										class="contact__list-social-link" target="_blank">
+										class="contact__list-social-link" target="_blank" aria-label="facebook page">
 										<div class="tooltip">Facebook</div>
 
 										<ion-icon name="logo-facebook"></ion-icon>
@@ -408,7 +428,7 @@
 								</li>
 								<li>
 									<a href="https://github.com/vlad-ustymenko" class="contact__list-social-link"
-										target="_blank">
+										target="_blank" aria-label="github page">
 										<div class="tooltip">GitHub</div>
 
 										<ion-icon name="logo-github"></ion-icon>
@@ -416,14 +436,14 @@
 								</li>
 								<li>
 									<a href="https://www.linkedin.com/in/ustymenko-dev/" class="contact__list-social-link"
-										target="_blank">
+										target="_blank" aria-label="linkedin page">
 										<div class="tooltip">Linkedin</div>
 
 										<ion-icon name="logo-linkedin"></ion-icon>
 									</a>
 								</li>
 								<li>
-									<a href="https://djinni.co/q/dc4c957e35/" class="contact__list-social-link" target="_blank">
+									<a href="https://djinni.co/q/dc4c957e35/" class="contact__list-social-link" target="_blank" aria-label="djinni page">
 										<div class="tooltip">Djinni</div>
 										<img src="./img/icons/webp/djinni.webp" alt="djinni.com">
 									</a>
@@ -490,7 +510,7 @@
 
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-	<!-- <script src="./index.js" -->
+	<!-- <script src="./index.js"></script> -->
 
 </body>
 
