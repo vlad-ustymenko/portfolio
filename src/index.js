@@ -1,6 +1,6 @@
 'use strict'
 import './css/style.css'
-//import html from './index.html'
+// import html from './index.html'
 
 const elemToggleFunc = function (elem) {
   elem.classList.toggle('active')
