@@ -3,7 +3,7 @@
 var __webpack_exports__ = {};
 
 ;
-//import html from './index.html'
+// import html from './index.html'
 
 const elemToggleFunc = function (elem) {
   elem.classList.toggle('active')
